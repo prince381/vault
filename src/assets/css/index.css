@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat', serif;
+    src: url('../fonts/Montserrat-Regular.ttf') format('ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source Sans Bold', sans-serif;
+    src: url('../fonts/SourceSansPro-Bold.ttf') format('ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Source Sans Regular', sans-serif;
+    src: url('../fonts/SourceSansPro-Regular.ttf') format('ttf');
+    font-weight: 400;
+}
+
+:root {
+    --background: #1d1d1d;
+    --alter-bg: #2e2e2e;
+    --text-color: #fff;
+    --fade-text: #dadada;
+    --highlight: #00ffff;
+}
+
+html, body {
+    font-size: 10px;
+    font-family: 'Montserrat', serif;
+}
+
+body {
+    width: 100vw;
+    height: max-content;
+    overflow-x: hidden;
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+#root,
+.App {
+    width: inherit;
+    height: inherit;
+}
+
+h1, h2, h3, h4 {
+    color: var(--text-color);
+    font-family: 'Source Sans Bold', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--highlight);
+    font-weight: 600;
+    transition: opacity .3s ease;
+}
+
+a:hover {
+    opacity: .5;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100vw;
+    height: max-content;
+}
